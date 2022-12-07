@@ -1,0 +1,12 @@
+# OS-specfic
+.DS_Store
+
+# Package managers
+node_modules
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log
+
+# Local env vars
+.env
+.env.*
