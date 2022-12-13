@@ -20,7 +20,7 @@
             const msRemaining = timerEndDate.getTime() - now.getTime();
 
             const minutesRemaining = Math.floor(msRemaining / 1000 / 60);
-            const secondsRemaining = Math.round(msRemaining / 1000 % 60);
+            const secondsRemaining = Math.floor(msRemaining / 1000 % 60);
 
             setMinutesValue(minutesRemaining);
             setSecondsValue(secondsRemaining);
