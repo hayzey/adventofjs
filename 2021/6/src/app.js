@@ -7,11 +7,10 @@ priceRangeInput.oninput = (ev) => {
 };
 
 const updatePriceDisplay = (inputVal) => {
-    const displayVal = parseInt(inputVal);
+    let displayVal = parseInt(inputVal);
 
     if (displayVal && !isNaN(displayVal)) {
-        displayVal 
+        displayVal /= 100;
+        priceDisplay.innerText = displayVal;
     }
-    
-    priceDisplay.innerText = inputVal;
 };
